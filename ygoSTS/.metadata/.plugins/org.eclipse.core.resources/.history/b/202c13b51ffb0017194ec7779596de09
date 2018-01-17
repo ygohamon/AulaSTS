@@ -1,0 +1,16 @@
+package br.com.crud.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import br.com.crud.main.Cliente;
+import br.com.crud.service.ClienteService;
+
+@Controller
+
+public class ClienteController {
+	@Autowired
+	private ClienteService service;
+	public void save(Cliente cliente) {
+		service.save(cliente);
+	}
+}
