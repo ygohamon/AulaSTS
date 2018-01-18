@@ -1,7 +1,6 @@
 package com.br.crud.controller;
 
-import java.util.ArrayList;
-
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -22,11 +21,10 @@ public class ClienteController {
 	public Cliente findOne(Long id) {
 		return service.findOne(id);
 	}
-	public void edit(Cliente cliente) {
-		service.edit(cliente);
+	public void editar(Cliente cliente) {
+		service.editar(cliente);
 	}
-	public ArrayList<Cliente> clientes(){
-		service.clientes();
-		return clientes();
+	public List<Cliente> listar(){
+	 return	service.listar();
 	}
 }

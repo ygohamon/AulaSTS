@@ -37,6 +37,7 @@ INDEX VERSION 1.130+C:\Users\lab06usuario39\Desktop\ygoSTS\.metadata\.plugins\or
 4236009997.index
 1335281688.index
 3759067309.index
+2576835630.index
 806060101.index
 1507996531.index
 2951954414.index

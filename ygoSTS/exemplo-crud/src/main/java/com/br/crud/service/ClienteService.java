@@ -1,6 +1,7 @@
 package com.br.crud.service;
 
-import java.util.ArrayList;
+import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,11 +23,11 @@ public class ClienteService {
 		return repository.findOne(id);
 		
 	}
-	public void edit(Cliente cliente) {
+	public void editar(Cliente cliente) {
 		repository.saveAndFlush(cliente);
 	}
-	public ArrayList<Cliente> clientes(){
-		repository.findAll();
-		return clientes();
+	public List<Cliente> listar(){
+		return repository.findAll();
+		
 	}
 }
