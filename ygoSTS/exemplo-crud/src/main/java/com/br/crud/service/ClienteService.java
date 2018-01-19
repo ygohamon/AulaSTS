@@ -16,8 +16,8 @@ public class ClienteService {
 	public void salvar(Cliente cliente) {
 		repository.save(cliente);
 	}
-	public void remover(Long id) {
-		repository.delete(id);
+	public void remover(Cliente cliente) {
+		repository.delete(cliente);
 	}
 	public Cliente findOne(Long id) {
 		return repository.findOne(id);
