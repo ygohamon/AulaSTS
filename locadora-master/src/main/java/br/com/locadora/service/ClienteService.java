@@ -15,8 +15,13 @@ public class ClienteService {
 	public void salvar(Cliente cliente) {
 		repository.save(cliente);
 	}
-	public void remover(Cliente cliente) {
+	public List<Cliente> remover(Cliente cliente) {
+		
+		List<Cliente> clientes = repository.findAll();
+		
 		repository.delete(cliente);
+		
+		return clientes;
 	}
 	public Cliente findOne(Long id) {
 		return repository.findOne(id);
